@@ -14,4 +14,6 @@ Files in this repo:
 - `privacy.html`
 - `terms.html`
 
-Contact email is intentionally left as a placeholder in the drafts until the final support address is ready for launch.
+Support contact:
+
+- `gentlesignal.studio@gmail.com`

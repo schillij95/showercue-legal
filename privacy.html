@@ -93,7 +93,7 @@
           <li>App settings and shower history stored locally on your device.</li>
           <li>Analytics events about app usage, such as onboarding progress, reminder flows, shower starts and finishes, settings changes, and feature usage.</li>
           <li>Crash and diagnostics information used to detect errors and improve app reliability.</li>
-          <li>Location data when you choose to use arrival-home reminders.</li>
+          <li>Location data used on your device when you choose to use arrival-home reminders.</li>
         </ul>
 
         <h2>How We Use Information</h2>
@@ -109,14 +109,21 @@
           when you arrive at your saved home location and to send the relevant reminder.
           This may require background location permission so the reminder can work when the app is closed.
         </p>
+        <p>
+          ShowerCue does not send your saved home label or raw latitude/longitude coordinates in
+          Firebase Analytics events.
+        </p>
 
         <h2>Analytics and Crash Reporting</h2>
         <p>
           ShowerCue uses Firebase Analytics and Firebase Crashlytics in native builds. The app includes
-          a Settings preference for product analytics. When that preference is off, ShowerCue stops
-          sending consent-gated analytics events from the app. Crash reporting remains enabled so the app
-          can detect failures and improve reliability. ShowerCue does not use analytics for third-party
-          advertising.
+          a Settings preference for product analytics. When that preference is off, ShowerCue turns off
+          Firebase Analytics collection. When it is on, ShowerCue may send app-usage events and reminder
+          diagnostics such as event names, app variant, reminder kind, trigger type, date keys,
+          scheduled times, action names, counts, and product or entitlement identifiers when relevant.
+          Crash reporting remains enabled so the app can detect failures and improve reliability, and
+          Crashlytics may receive limited app metadata such as app variant and application identifier.
+          ShowerCue does not use analytics for third-party advertising.
         </p>
 
         <h2>Data Sharing</h2>

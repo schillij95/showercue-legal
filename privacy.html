@@ -64,18 +64,31 @@
       .meta {
         font-size: 0.95rem;
       }
+
+      .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 28px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+        font-size: 0.95rem;
+      }
     </style>
   </head>
   <body>
     <main>
       <section class="card">
         <h1>ShowerCue Privacy Policy</h1>
-        <p class="meta">Last updated: March 20, 2026</p>
+        <p class="meta">Last updated: March 30, 2026</p>
 
         <p>
           ShowerCue is a mobile app that helps users follow their shower plan with reminders,
           schedule settings, and local progress tracking.
         </p>
+
+        <h2>Operator</h2>
+        <p>ShowerCue is operated from Switzerland.</p>
 
         <h2>Information We Collect</h2>
         <p>ShowerCue may collect the following categories of information:</p>
@@ -102,8 +115,11 @@
 
         <h2>Analytics and Crash Reporting</h2>
         <p>
-          ShowerCue uses Firebase Analytics and Firebase Crashlytics. These services help measure feature
-          usage and identify app errors. ShowerCue does not use analytics for third-party advertising.
+          ShowerCue uses Firebase Analytics and Firebase Crashlytics in native builds. The app includes
+          a Settings preference for product analytics. When that preference is off, ShowerCue stops
+          sending consent-gated analytics events from the app. Crash reporting remains enabled so the app
+          can detect failures and improve reliability. ShowerCue does not use analytics for third-party
+          advertising.
         </p>
 
         <h2>Data Sharing</h2>
@@ -114,10 +130,15 @@
 
         <h2>Your Choices</h2>
         <ul>
-          <li>You can disable analytics in the app settings.</li>
+          <li>You can turn off product analytics in the app settings.</li>
           <li>You can disable notifications in the app or in system settings.</li>
           <li>You can revoke location permissions in system settings.</li>
         </ul>
+
+        <p>
+          Turning off product analytics does not disable crash reporting or other diagnostics needed
+          to keep the app working.
+        </p>
 
         <h2>Data Retention</h2>
         <p>
@@ -131,9 +152,14 @@
 
         <h2>Contact</h2>
         <p>
-          If you have questions about this Privacy Policy, contact:
+          If you have questions about this Privacy Policy, contact ShowerCue support at:
           <a href="mailto:replace-with-your-support-email@example.com">replace-with-your-support-email@example.com</a>
         </p>
+
+        <nav class="footer-nav" aria-label="Legal site navigation">
+          <a href="./index.html">Legal Home</a>
+          <a href="./terms.html">Terms of Use</a>
+        </nav>
       </section>
     </main>
   </body>

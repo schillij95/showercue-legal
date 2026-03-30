@@ -29,14 +29,14 @@
       main {
         max-width: 760px;
         margin: 0 auto;
-        padding: 48px 20px 72px;
+        padding: 56px 20px 72px;
       }
 
       .card {
         background: var(--surface);
         border: 1px solid var(--border);
         border-radius: 20px;
-        padding: 24px;
+        padding: 28px;
         box-shadow: 0 16px 40px rgba(17, 50, 58, 0.08);
       }
 
@@ -44,8 +44,13 @@
         margin: 0 0 16px;
       }
 
+      h1 {
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        letter-spacing: -0.03em;
+      }
+
       p {
-        line-height: 1.6;
+        line-height: 1.7;
         color: var(--muted);
       }
 
@@ -57,17 +62,50 @@
       a {
         color: var(--accent);
       }
+
+      .eyebrow {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .meta {
+        margin-top: 20px;
+        font-size: 0.95rem;
+      }
+
+      .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 28px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+        font-size: 0.95rem;
+      }
     </style>
   </head>
   <body>
     <main>
       <section class="card">
-        <h1>ShowerCue Legal</h1>
-        <p>Public legal pages for the ShowerCue Android app.</p>
+        <p class="eyebrow">ShowerCue Legal</p>
+        <h1>Privacy and terms for ShowerCue</h1>
+        <p>
+          Current legal pages for the ShowerCue app. Use the links below to open the privacy policy
+          and terms of use, or jump back here from either page.
+        </p>
+        <p class="meta">Last updated: March 30, 2026</p>
         <ul>
           <li><a href="./privacy.html">Privacy Policy</a></li>
           <li><a href="./terms.html">Terms of Use</a></li>
         </ul>
+        <nav class="footer-nav" aria-label="Legal site navigation">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Use</a>
+        </nav>
       </section>
     </main>
   </body>

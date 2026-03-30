@@ -1,23 +1,17 @@
-# Legal Site Drafts
+# ShowerCue Legal Site
 
-These files are draft public legal pages for ShowerCue.
+This repo hosts the public legal pages for ShowerCue and is published with GitHub Pages.
 
-They live in this repo temporarily so they can be edited alongside the app, but the intended final setup is:
+Published URLs:
 
-1. Keep the main `ShowerCue` app repo private.
-2. Copy these files into a separate small public repo.
-3. Publish that repo with GitHub Pages.
-4. Use the published URL in Google Play Console and inside the app.
+- `https://schillij95.github.io/showercue-legal/`
+- `https://schillij95.github.io/showercue-legal/privacy.html`
+- `https://schillij95.github.io/showercue-legal/terms.html`
 
-Recommended public repo shape:
+Files in this repo:
 
 - `index.html`
 - `privacy.html`
 - `terms.html`
 
-Suggested next step after review:
-
-1. Create a separate public repo such as `showercue-legal`.
-2. Copy these files over.
-3. Enable GitHub Pages from the repo root.
-4. Use the generated `https://<user>.github.io/<repo>/privacy.html` URL.
+Contact email is intentionally left as a placeholder in the drafts until the final support address is ready for launch.
